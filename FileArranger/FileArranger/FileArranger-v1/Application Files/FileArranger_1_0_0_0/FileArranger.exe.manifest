@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FileArranger.exe" version="1.0.0.0" publicKeyToken="842a2db09c5421a1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FileArranger" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FileArranger.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FileArranger.exe" size="12768">
+      <assemblyIdentity name="FileArranger" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4DGTuh2YRCi8Mlpk1BA9nNNXGlCdenLPZrtV02/tkTY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.dll" size="114176">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IeFA3K+j4lE3OnEkI7sRFXBzfpXk3PtvVoaNcIavdoY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.Shell.dll" size="587776">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack.Shell" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bqJb5JpOlsQ8ILwp6xztB49OC87EZzznIiccd7wvoSE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.ShellExtensions.dll" size="38400">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack.ShellExtensions" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>whvEhHrDx122S196/rD8sOIrpDa324BpJSO0gQsEbSI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="FileArranger.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-31LLKT6E\Jacob" issuerKeyHash="3d3dcee989ec6eeb8465725b4e5a0c91545e62e7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MpcF7bHy/ELSaKyTdCdlCYxy7TliWVZ/RtkOFIRWvCk=</DigestValue></Reference></SignedInfo><SignatureValue>GjoHNcP81BsiIFixRkLbO2vVClibXmuE3lR5vOAFtlge/zdNTctsEjvCzPpJ0BM5tJzYTBJUD8CjM4DNNSf3aPx7ezWIwXL4pXkJH2uTbmy0vksLQwQJtPlf8B4bUvUOFepHQcbgqPmVGyNwGY7WTGKBPfyGoXMrIuNsHE3NWRc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ufyGNez7LUiT7nMaOyTiJxdOFMiNvmW9DBzP9wENbSsOhcG+eRBK/KHABQJUZ1SF5EAfwxh1H37Eh/W6bI9Kx6eKvWK5+S4lU02y9vUEK8gG7vroS5GSMmIfyWWO544SmCHrhHuYmX/oSb22qyeK68fOWpwl/lb35EytL2ODQFE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="29bc5684140ed9467f56596239ed728c0965277493ac68d242fcf2b1ed059732" Description="" Url=""><as:assemblyIdentity name="FileArranger.exe" version="1.0.0.0" publicKeyToken="842a2db09c5421a1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-31LLKT6E\Jacob</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l/toV+cNtcvHDQUNnU99spDys8MTSe+LjpiEct/Fu1I=</DigestValue></Reference></SignedInfo><SignatureValue>HK1HRJ0x+xDLbsG2xO1ihVmlESmJ7QVbun8+05B0IGMI7neh9HSJrJVAGI8bvc0l1BTi5hyGemNbKwZBOz2P4KTTBOW7nxcaVe+yTCi66ab9voqjDcaiU5k05KZe/RMgoLCvGuXcnT9aycRcS4ispMb85VHGn3maYnLvjPwEGro=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ufyGNez7LUiT7nMaOyTiJxdOFMiNvmW9DBzP9wENbSsOhcG+eRBK/KHABQJUZ1SF5EAfwxh1H37Eh/W6bI9Kx6eKvWK5+S4lU02y9vUEK8gG7vroS5GSMmIfyWWO544SmCHrhHuYmX/oSb22qyeK68fOWpwl/lb35EytL2ODQFE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQHhIUFjNBh4xCELr/67YsizANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQAzADEATABMAEsAVAA2AEUAXABKAGEAYwBvAGIwHhcNMjIwMzAyMjI0MTMyWhcNMjMwMzAzMDQ0MTMyWjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQAzADEATABMAEsAVAA2AEUAXABKAGEAYwBvAGIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALn8hjXs+y1Ik+5zGjsk4icXThTIjb5lvQwcz/cBDW0rDoXBvnkQSvyhwAUCVGdUheRAH8MYdR9+xIf1umyPSsenir1iufkuJVNNsvb1BCvIBu766EuRkjJiH8lljueOEpgh64R7mJl/6Em9tqsniuvHzlqcJf5W9+RMrS9jg0BRAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAs9ZhardsLAEsYoWQbwPQkZWCvmg02c8TOCxwDlRlUUCBHwkkKP7fSj4UWw1x/OL+lljIxHS92Rnv2ug26eefkh80ndQOEIWMOFsOnhfW8BYF1pgEuypzIrnvX51l+a89aQMTO0lYtCI43uF98m8ewYp6vOXKOuzkJYkvoW4w+OA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
